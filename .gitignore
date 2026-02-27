@@ -1,0 +1,7 @@
+docker-compos.yaml/
+node_modules/
+dist/
+zip/
+Dockerfile
+docker-compose.yml
+.env.example

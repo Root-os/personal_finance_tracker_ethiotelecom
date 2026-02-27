@@ -1,0 +1,44 @@
+{
+  "name": "personal-finance-tracker-frontend",
+  "description": "Frontend for Personal Finance Tracker built with React, Vite, TailwindCSS and Zustand.",
+  "author": {
+    "name": "Rodas Asmare",
+    "url": "https://github.com/Root-os"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Root-os/personal_finance_tracker.git"
+  },
+  "homepage": "https://github.com/Root-os/personal_finance_tracker#readme",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "axios": "^1.13.5",
+    "lucide-react": "^0.542.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.1",
+    "recharts": "^3.7.0",
+    "tailwindcss": "^4.2.1",
+    "tesseract.js": "^7.0.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.3.1"
+  }
+}

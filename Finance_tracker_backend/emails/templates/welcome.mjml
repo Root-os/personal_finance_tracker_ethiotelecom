@@ -1,0 +1,89 @@
+<mjml>
+  <mj-head>
+    <mj-preview>{{previewText}}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Segoe UI', Inter, Roboto, Arial, sans-serif" />
+      <mj-text font-size="15px" line-height="1.6" color="#1a1a2e" />
+      <mj-button background-color="#16A34A" color="#ffffff" border-radius="12px" font-weight="600" font-size="15px" inner-padding="14px 32px" />
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#f0f0f5">
+    <mj-section padding="20px 0 0" />
+
+    <!-- Brand -->
+    <mj-section padding="0 16px">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" color="#4F46E5" letter-spacing="1px" text-transform="uppercase" align="center">
+          Personal Finance Tracker
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main card -->
+    <mj-section padding="12px 16px">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="32px 28px">
+
+        <!-- Icon -->
+        <mj-text align="center" padding-bottom="8px">
+          <span style="font-size:40px;">🎉</span>
+        </mj-text>
+
+        <!-- Title -->
+        <mj-text font-size="24px" font-weight="700" align="center" padding-bottom="4px">
+          Welcome, {{userName}}!
+        </mj-text>
+
+        <!-- Body -->
+        <mj-text color="#4b5563" align="center" padding-bottom="8px">
+          Your email has been verified and your account is fully activated.
+        </mj-text>
+
+        <mj-text color="#4b5563">
+          You're all set to start managing your finances. Here's what you can do:
+        </mj-text>
+
+        <!-- Feature list -->
+        <mj-text color="#4b5563" padding-top="8px">
+          ✅ <strong>Track transactions</strong> — Log income and expenses<br/>
+          ✅ <strong>Organize categories</strong> — Create custom spending categories<br/>
+          ✅ <strong>View analytics</strong> — See spending trends and insights<br/>
+          ✅ <strong>Set budgets</strong> — Compare spending against your goals
+        </mj-text>
+
+        <!-- CTA -->
+        <mj-button href="{{loginUrl}}" padding="24px 0">
+          Sign In to Get Started
+        </mj-button>
+
+        <!-- Divider -->
+        <mj-divider border-color="#E5E7EB" border-width="1px" padding="16px 0" />
+
+        <!-- Security tip -->
+        <mj-text padding="0">
+          <table style="background-color:#F0FDF4; border-radius:12px; width:100%; border-collapse:collapse;">
+            <tr>
+              <td style="padding:12px 16px; font-size:12px; color:#166534; line-height:1.6; font-family:'Segoe UI', Inter, Roboto, Arial, sans-serif;">
+                🔒 <strong>Security tips:</strong> Enable a strong password, never share your login credentials, and use "Logout all devices" if you suspect unauthorized access.
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="8px 16px 24px">
+      <mj-column>
+        <mj-text font-size="11px" color="#9CA3AF" align="center">
+          You're receiving this email because you verified your account on Personal Finance Tracker.
+        </mj-text>
+        <mj-text font-size="11px" color="#9CA3AF" align="center" padding-top="4px">
+          © {{currentYear}} Personal Finance Tracker. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

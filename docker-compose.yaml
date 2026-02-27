@@ -1,0 +1,42 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: finance_tracker
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    build: ./Finance_tracker_backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=root_password
+      - DB_NAME=finance_tracker
+      - DB_PORT=3306
+      - DB_DIALECT=mysql
+      - NODE_ENV=production
+      - JWT_SECRET=change_this_secret_in_prod
+      - JWT_REFRESH_SECRET=change_this_refresh_secret
+    depends_on:
+      - db
+
+  frontend:
+    build: ./Finance_tracker_frontend
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:5000
+    depends_on:
+      - backend
+
+volumes:
+  db_data:

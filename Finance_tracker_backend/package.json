@@ -1,0 +1,50 @@
+{
+  "name": "personal-finance-tracker-backend",
+  "version": "1.0.0",
+  "description": "Secure backend API for Personal Finance Tracker built with Express, MySQL, Sequelize, JWT authentication and email services.",
+  "author": {
+    "name": "Rodas Asmare",
+    "url": "https://github.com/Root-os"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Root-os/personal_finance_tracker.git"
+  },
+  "homepage": "https://github.com/Root-os/personal_finance_tracker#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "cookie-parser": "^1.4.7",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.17.4",
+    "nodemailer": "^8.0.1",
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3",
+    "sequelize": "^6.37.7",
+    "umzug": "^3.8.2",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "set NODE_ENV=test&& jest --runInBand",
+    "test:watch": "set NODE_ENV=test&& jest --watch --runInBand",
+    "test:coverage": "set NODE_ENV=test&& jest --coverage --runInBand",
+    "migrate": "node scripts/migrate.js",
+    "migrate:down": "node scripts/migrate.js down"
+  }
+}
